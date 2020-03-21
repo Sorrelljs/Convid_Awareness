@@ -120,6 +120,12 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 })({"App.js":[function(require,module,exports) {
 var cardContainer = document.querySelector(".card");
 var cardTitle = document.querySelector(".card_title");
+var notice = document.querySelector(".root_notice");
+
+function startCard() {
+  cardContainer.className += " hide";
+  notice.className += " hide";
+}
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

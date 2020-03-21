@@ -4,12 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.e308ff8e.css">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+
     <title>Spread Awareness</title>
   <script src="/style.e308ff8e.js"></script></head>
   <body>
-    <div class="card">
-      <h1 class="card_title">Spreading Awareness</h1>
+    <div class="root_heading">
+      <h2 class="root_heading--title">Convid-19 Self-assessment tool</h2>
     </div>
+    <div class="root_notice">
+      <h3 class="root_notice_title">Primary Notice:</h3>
+      <p class="root_notice_text">
+        COVID-19 should be taken seriously, but in many cases you can care for
+        yourself at home, without visiting a medical facility.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="card_tool_container">
+        <p class="card_tool_text">
+          This tool was developed using the
+          <a class="card_tool_text_link" href="https://www.cdc.gov/coronavirus/2019-ncov/index.html" target="_blank">latest recommendations from the CDC and vasts amount of research
+          </a>
+          , which will help you determine what to do if you think you might have
+          symptoms of COVID-19 or may have been
+          <span class="card_tool_text--exposed">exposed.</span>
+        </p>
+      </div>
+
+      <button type="submit" onclick="startCard()" class="card_start_button">
+        <span class="card_start">Start Now</span>
+      </button>
+    </div>
+    <footer class="page_footer">
+      <div class="page_footer_container">
+        <p class="page_footer_text">
+          This Coronavirus Self-Triage Guide was developed to raise awareness
+          and should not be used as a diagnosis. If you are feeling any symptoms
+          mentioned above please visit your local doctor.
+        </p>
+      </div>
+    </footer>
     <script src="/App.d36a57b6.js"></script>
+    <script>function startCard() {
+  var cardContainer = document.querySelector(".card");
+  var notice = document.querySelector(".root_notice");
+  cardContainer.className += " hide";
+  notice.className += " hide";
+}</script>
   </body>
 </html>
