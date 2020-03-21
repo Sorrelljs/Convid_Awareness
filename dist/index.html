@@ -32,10 +32,18 @@
         </p>
       </div>
 
-      <button type="submit" onclick="startCard()" class="card_start_button">
+      <div class="card__form">
+        <h6 class="card__form--text">
+          Have you been in contact with someone diagnosed with COVID-19 either
+          while that person was sick or within a week of their developing
+          symptoms?
+        </h6>
+      </div>
+      <button type="submit" class="card_start_button">
         <span class="card_start">Start Now</span>
       </button>
     </div>
+    <!-- card ending -->
     <footer class="page_footer">
       <div class="page_footer_container">
         <p class="page_footer_text">
@@ -46,11 +54,5 @@
       </div>
     </footer>
     <script src="/App.d36a57b6.js"></script>
-    <script>function startCard() {
-  var cardContainer = document.querySelector(".card");
-  var notice = document.querySelector(".root_notice");
-  cardContainer.className += " hide";
-  notice.className += " hide";
-}</script>
   </body>
 </html>
