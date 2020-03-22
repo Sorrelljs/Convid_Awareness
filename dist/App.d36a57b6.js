@@ -118,24 +118,39 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"App.js":[function(require,module,exports) {
+//element.addEventListener(event, function, useCapture);
 var cardTitle = document.querySelector(".card_title");
 var cardText = document.querySelector(".card__form");
-document.getElementsByClassName(".card_start_button").addEventListener("click", function (e) {
-  console.log(this);
-});
+var cardBtn = document.querySelector(".card_start_button");
+var formContainer = document.querySelector(".form__container");
 
 function startCard() {
   var cardContainer = document.querySelector(".card_tool_container");
   var notice = document.querySelector(".root_notice");
   cardContainer.className += " hide";
   notice.className += " hide";
+  cardText.className += " active";
+  cardBtn.className += " hide";
+  formContainer.className += " active_flex";
+  formContainer.style.display = "flex";
 }
 
-cardText.addEventListener("click", console.log);
+cardBtn.addEventListener("click", startCard);
 
 function displayForm() {
   cardText.className += "active";
 }
+
+var formYes = document.querySelector(".form__no");
+var formNo = document.querySelector(".form__yes");
+var questionText = document.querySelector(".card__form--text");
+formYes.addEventListener("click", newQuestion);
+
+function newQuestion() {
+  questionText.innerHTML = "Are you ill, or caring for someone who is ill?";
+}
+
+formNo.addEventListener("click", newQuestion);
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -164,7 +179,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57678" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64624" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

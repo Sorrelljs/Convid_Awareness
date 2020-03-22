@@ -102,14 +102,35 @@ p.page_footer_text {
   display: block;
 }
 
-.card__form--text {
+.active_flex {
+  display: flex;
 }
 
 .card__form {
-  display: none;
   border: 1px solid black;
   width: auto;
   height: auto;
-  margin: 0 20px 0 20px;
+  margin: 2rem 0;
   padding: 20px;
+  border-radius: 30px;
+}
+
+/* form start */
+
+.form__container {
+  display: none;
+  flex-direction: column;
+  border: 1px solid black;
+  align-items: flex-start;
+  margin: 0 80px 0 80px;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.form {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 10px;
+  display: flex;
+  width: 150px;
 }
