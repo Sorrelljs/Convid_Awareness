@@ -141,16 +141,23 @@ function displayForm() {
   cardText.className += "active";
 }
 
-var formYes = document.querySelector(".form__no");
-var formNo = document.querySelector(".form__yes");
+var formNo = document.querySelector(".form__no");
+var formYes = document.querySelector(".form__yes");
 var questionText = document.querySelector(".card__form--text");
-formYes.addEventListener("click", newQuestion);
+formNo.addEventListener("click");
 
 function newQuestion() {
   questionText.innerHTML = "Are you ill, or caring for someone who is ill?";
 }
 
-formNo.addEventListener("click", newQuestion);
+if (formNo.clicked == true) {
+  return newQuestion();
+}
+
+function endingForm() {
+  formFirstEnding.className += "active";
+} // formNo.addEventListener("click", endingForm);
+// let formFirstEnding = document.querySelector(".form__reply--ending");
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -179,7 +186,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64624" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64298" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

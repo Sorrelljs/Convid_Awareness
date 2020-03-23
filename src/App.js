@@ -22,13 +22,22 @@ function displayForm() {
   cardText.className += "active";
 }
 
-let formYes = document.querySelector(".form__no");
-let formNo = document.querySelector(".form__yes");
+let formNo = document.querySelector(".form__no");
+let formYes = document.querySelector(".form__yes");
 let questionText = document.querySelector(".card__form--text");
 
-formYes.addEventListener("click", newQuestion);
+formNo.addEventListener("click");
+
 function newQuestion() {
   questionText.innerHTML = "Are you ill, or caring for someone who is ill?";
 }
+if (formNo.clicked == true) {
+  return newQuestion();
+}
 
-formNo.addEventListener("click", newQuestion);
+function endingForm() {
+  formFirstEnding.className += "active";
+}
+
+// formNo.addEventListener("click", endingForm);
+// let formFirstEnding = document.querySelector(".form__reply--ending");

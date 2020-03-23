@@ -8,7 +8,7 @@
 .root_heading {
   background: rgba(43, 35, 199, 0.75);
   width: 100vw;
-  height: 10vh;
+  height: 14vh;
 }
 
 .root_heading--title {
@@ -17,7 +17,9 @@
   font-size: 22px;
   font-family: Roboto, sans-serif;
   color: white;
-  margin: 0px;
+  padding-top: 70px;
+  text-align: center;
+  margin: 0px 15px 0 15px;
 }
 
 .card {
@@ -85,8 +87,9 @@ p.card_tool_text {
 .page_footer_container {
   background: rgba(43, 35, 199, 0.75);
   width: 100vw;
-  height: 50px;
+  height: auto;
   padding: 10px;
+  padding: 0 15px 0 15px;
 }
 
 p.page_footer_text {
@@ -133,4 +136,51 @@ p.page_footer_text {
   margin: 10px;
   display: flex;
   width: 150px;
+}
+
+.form__reply--ending {
+  border: 1px black dotted;
+  border-radius: 50px;
+  padding: 15px;
+}
+
+/*     page 2 contents */
+
+.page-content {
+  padding: 0 40px 0 40px;
+  line-height: 1.4;
+  letter-spacing: 0.3px;
+}
+
+h1 {
+  color: #335d9f;
+  font-weight: 300;
+  font-size: 30px;
+  margin-bottom: 15px;
+  padding-top: 57px;
+}
+
+html {
+  font-family: "Open Sans";
+  color: #545454;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+p {
+  margin: 0 0 10px;
+}
+body p {
+  line-height: 28px;
+}
+li {
+  margin: 20px;
+}
+
+.page_entry_paragraph {
+  margin-bottom: 15px;
+}
+
+.page_link--reference {
+  color: #16acce;
 }
