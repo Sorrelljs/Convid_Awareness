@@ -144,7 +144,8 @@ function displayForm() {
 var formNo = document.querySelector(".form__no");
 var formYes = document.querySelector(".form__yes");
 var questionText = document.querySelector(".card__form--text");
-formNo.addEventListener("click");
+formNo.addEventListener("click", newQuestion);
+formYes.addEventListener("click", newQuestion);
 
 function newQuestion() {
   questionText.innerHTML = "Are you ill, or caring for someone who is ill?";
